@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Booking Page" content="Booking Form">
+    <title>Booking|AutoMob-Mechanic</title>
+</head>
+<body>
+    <header>
+        <section>
+            <a href="./Home.html" target="_parent" rel="noopener noreferrer">AutoMob-Mechanic</a>
+            <br />
+            <br />
+        </section>
+        <section>
+            <nav>
+                <a href="./Home.html" target="_parent" rel="noopener noreferrer">Home</a> |
+                <a href="./Services.html" target="_parent" rel="noopener noreferrer">Services</a> |
+                <a href="" target="_parent" rel="noopener noreferrer">Booking</a> |
+                <a href="mailto:contact@automob.co.in" target="_parent" rel="noopener noreferrer">contact@automob.co.in &#9993;</a> |
+                <span>999 999 9999 &#9743;</span>
+            </nav>
+        </section>
+    </header>
+    <hr />
+    <main>
+        <section>
+            <h2>Book Your Service</h2>
+        </section>
+        <section>
+            <form action="" method="post" target="_parent" id="booking_form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="John Daub" required pattern="^([a-zA-Z]{2,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)">
+                <br />
+                <br />
+                <label for="email">Email Id:</label>
+                <input type="email" name="email" id="email" placeholder="john@yahoo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <br />
+                <br />
+                <label for="phone">Phone Number:</label>
+                <select name="countries code" id="phone" required>
+                    <option value="code" disabled selected>code</option>
+                    <option value="+213">+213</option>
+                    <option value="+91">+91</option>
+                    <option value="+244">+244</option>
+                    <option value="+61">+61</option>
+                </select>
+                <input type="tel" placeholder="9823232323" pattern="[0-9]{10}" required >
+                <br />
+                <br />
+                <label for="service">Select Service:</label>
+                <select name="service list" id="service" required>
+                    <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+                    <option value="Body Repair Service">Body Repair Service</option>
+                    <option value="Car Care Service">Car Care Service</option>
+                </select>
+                <br />
+                <br />
+                <label for="car_make">Car Make:</label>
+                <input list="make" id="car_make" placeholder="Suzuki, Toyota..." required>
+                <datalist id="make">
+                    <option value="Mahindra">
+                    <option value="Honda">
+                    <option value="Hyundai">
+                    <option value="Ford">
+                    <option value="Toyota">
+                    <option value="Nissan">
+                </datalist>
+                <br />
+                <br />
+                <label for="car_model">Car Model:</label>
+                <input type="text" name="car_model" id="car_model" placeholder="Alto, Innova..." required>
+                <br />
+                <br />
+                <label for="fuel_type">Fuel Type:</label>
+                <input type="radio" name="fuel_type" id="fuel_type">Petrol
+                <input type="radio" name="fuel_type" id="fuel_type">Diesel
+                <input type="radio" name="fuel_type" id="fuel_type">LPG
+                <input type="radio" name="fuel_type" id="fuel_type">Others
+                <br />
+                <br />
+                <label for="kilometres">Kilometers Ran:</label>
+                <input type="number" name="kilometres" id="kilometres" placeholder="...km" required>
+                <br />
+                <br />
+                <button type="submit">Schedule an Appointment</button>
+            </form>
+        </section>
+    </main>
+    <hr />
+    <footer>
+        <p>Copyright &copy; 2020 AutoMob-Mechanic. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
